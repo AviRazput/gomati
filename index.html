@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gomati — traditional sun-dried badi & snacks. Mungori Badi, Tishiauri Badi, delivered fresh."
+    />
+    <title>Gomati — Traditional Badi & Snacks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo-link" aria-label="Gomati home">
+          <img src="assets/logo.jpg" alt="Gomati" class="logo-img" width="180" height="72" />
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-box" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+        <div class="nav-shell" id="primary-nav">
+          <nav class="nav" aria-label="Primary">
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Backdrop lives outside sticky header so position:fixed menu isn’t clipped / trapped by backdrop-filter -->
+    <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-brand">Gomati</p>
+            <p class="eyebrow">Artisan packaged · Vegetarian</p>
+            <h1 class="hero-title">Sun-dried badi,<br /><span class="accent">tradition preserved.</span></h1>
+            <p class="hero-lede">
+              Gomati brings you preservative-labelled traditional badi in resealable packs — crisp flavour, honest
+              ingredients, straight from heritage recipes.
+            </p>
+            <div class="hero-actions">
+              <a href="#shop" class="btn btn-primary">Shop now</a>
+              <a href="#about" class="btn btn-secondary">Our story</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="products">
+        <div class="container">
+          <header class="section-head">
+            <h2 class="section-title">Featured products</h2>
+            <p class="section-sub">200g resealable pouches · MRP as marked</p>
+          </header>
+          <div class="product-grid">
+            <article class="product-card" data-product-id="mungori-badi">
+              <div class="product-media">
+                <img
+                  class="product-img is-active"
+                  src="public/1/frontview.jpg"
+                  alt="Mungori Badi — front"
+                  width="480"
+                  height="600"
+                />
+                <img
+                  class="product-img"
+                  src="public/1/backview.jpg"
+                  alt="Mungori Badi — back"
+                  width="480"
+                  height="600"
+                  hidden
+                />
+                <div class="product-dots" role="tablist" aria-label="Product photos"></div>
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Mungori Badi</h3>
+                <p class="product-meta">200g · Traditional sun-dried lentil dumplings</p>
+                <p class="product-price"><span class="currency">₹</span>70</p>
+                <button type="button" class="btn btn-buy" data-title="Mungori Badi" data-price="70">
+                  Buy now
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="tishiauri-badi">
+              <div class="product-media">
+                <img
+                  class="product-img is-active"
+                  src="public/2/frontview.jpg"
+                  alt="Tishiauri Badi — front"
+                  width="480"
+                  height="600"
+                />
+                <img
+                  class="product-img"
+                  src="public/2/backview.jpg"
+                  alt="Tishiauri Badi — back"
+                  width="480"
+                  height="600"
+                  hidden
+                />
+                <div class="product-dots" role="tablist" aria-label="Product photos"></div>
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Tishiauri Badi</h3>
+                <p class="product-meta">200g · Authentic badi for curries &amp; pickles</p>
+                <p class="product-price"><span class="currency">₹</span>65</p>
+                <button type="button" class="btn btn-buy" data-title="Tishiauri Badi" data-price="65">
+                  Buy now
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-band">
+        <div class="container about-inner">
+          <div>
+            <h2 class="section-title">Why Gomati</h2>
+            <p class="about-text">
+              We combine folk-art rooted identity with modern, food-safe packaging. Every pouch is labelled, sealed, and
+              ready for your pantry — so you cook with confidence.
+            </p>
+          </div>
+          <ul class="about-list">
+            <li>Resealable silver pouches</li>
+            <li>Vegetarian · preservative callout on pack</li>
+            <li>FSSAI licensed products</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="" class="footer-logo" width="140" height="56" />
+          <p class="footer-tagline">Traditional taste, trusted today.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Shop</h3>
+          <ul class="footer-links">
+            <li><a href="#shop">Mungori Badi</a></li>
+            <li><a href="#shop">Tishiauri Badi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact</h3>
+          <p class="footer-contact">
+            <a href="mailto:hello@gomati.example">hello@gomati.example</a><br />
+            <span class="muted">Replace with your business email.</span>
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bar">
+        <p>© <span id="year"></span> Gomati. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
